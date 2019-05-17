@@ -25,9 +25,9 @@
 #include <cmath>
 #include <cstdlib>
 #include <algorithm>
-#include "cvode/cvode.h"             // prototypes for CVODE fcts and consts
-#include "nvector/nvector_serial.h"  // serial N_Vector types, fcts., and macros
-#include "sundials/sundials_direct.h"
+//#include "cvode/cvode.h"             // prototypes for CVODE fcts and consts
+//#include "nvector/nvector_serial.h"  // serial N_Vector types, fcts., and macros
+//#include "sundials/sundials_direct.h"
 using namespace std;
 
 #define T0    RCONST(0.0)       // initial time      

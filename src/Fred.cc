@@ -44,12 +44,12 @@
 class Place;
 
 #ifndef __CYGWIN__
-#include "execinfo.h"
+//#include "execinfo.h"
 #endif /* __CYGWIN__ */
 
 #include <csignal>
 #include <cstdlib>
-#include <cxxabi.h>
+//#include <cxxabi.h>
 
 
 //FRED main program

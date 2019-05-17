@@ -786,7 +786,7 @@ int Epidemic::get_age_group(int age) {
 }
 
 void Epidemic::report_transmission_by_age_group(int day) {
-  int groups = 4;
+  const int groups = 4;
   int age_count[groups][groups];    // age group counts
   for(int i = 0; i < groups; ++i) {
     for(int j = 0; j < groups; ++j) {

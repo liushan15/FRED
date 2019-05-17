@@ -1,0 +1,561 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Abstract_Grid.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Abstract_Patch.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Activities.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Age_Map.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Antiviral.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Antivirals.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AV_Decisions.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AV_Health.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AV_Manager.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AV_Policies.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Behavior.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Classroom.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="County.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Date.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Decision.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Demographics.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Disease.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Disease_List.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Epidemic.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Events.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Evolution.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="EvolutionFactory.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Fred.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Geo.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Global.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Health.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="HIV_Epidemic.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="HIV_Infection.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="HIV_Natural_History.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Hospital.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Household.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Infection.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Intention.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Manager.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Markov_Epidemic.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Markov_Infection.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Markov_Model.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Markov_Natural_History.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Mixing_Group.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MSEvolution.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Natural_History.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Neighborhood.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Neighborhood_Layer.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Neighborhood_Patch.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Network.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Office.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Params.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Past_Infection.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Perceptions.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Person.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Person_Network_Link.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Person_Place_Link.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Piecewise_Linear.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Place.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Place_List.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Policy.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Population.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Random.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Regional_Layer.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Regional_Patch.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Respiratory_Transmission.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="School.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Seasonality.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Seasonality_Timestep_Map.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sexual_Transmission.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sexual_Transmission_Network.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Strain.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StrainTable.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Timestep_Map.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Trajectory.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Transmission.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Travel.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Vaccine.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Vaccines.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Vaccine_Dose.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Vaccine_Health.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Vaccine_Manager.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Vaccine_Priority_Decisions.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Vaccine_Priority_Policies.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Vector_Layer.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Vector_Patch.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Vector_Transmission.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Visualization_Layer.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Visualization_Patch.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Workplace.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Abstract_Grid.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Abstract_Patch.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Activities.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Age_Map.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Antiviral.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Antivirals.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AV_Decisions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AV_Health.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AV_Manager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AV_Policies.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Behavior.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Bloque.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Classroom.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Compression.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="County.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Date.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Decision.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Demographics.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Disease.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Disease_List.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Epidemic.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Events.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Evolution.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EvolutionFactory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FixedIntraHost.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Fred.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Geo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Global.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Health.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="HIV_Epidemic.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="HIV_Infection.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="HIV_Natural_History.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Hospital.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Household.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Infection.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Intention.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Manager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Markov_Epidemic.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Markov_Infection.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Markov_Model.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Markov_Natural_History.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Mixing_Group.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MSEvolution.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Natural_History.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Neighborhood.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Neighborhood_Layer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Neighborhood_Patch.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Network.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ODE.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ODEIntraHost.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Office.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Params.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Past_Infection.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Perceptions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Person.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Person_Network_Link.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Person_Place_Link.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Piecewise_Linear.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Place.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Place_List.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Policy.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Population.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Random.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Regional_Layer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Regional_Patch.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Respiratory_Transmission.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RSAIntraHost.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="School.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Seasonality.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Seasonality_Timestep_Map.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Sexual_Transmission.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Sexual_Transmission_Network.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="State.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Strain.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StrainTable.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Timestep_Map.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Tracker.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Trajectory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Transmission.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Travel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Vaccine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Vaccines.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Vaccine_Dose.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Vaccine_Health.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Vaccine_Manager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Vaccine_Priority_Decisions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Vaccine_Priority_Policies.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector_Layer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector_Patch.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector_Transmission.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Visualization_Layer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Visualization_Patch.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Workplace.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

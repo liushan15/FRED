@@ -17,7 +17,7 @@
 #define _FRED_GLOBAL_H
 
 #include <stdio.h>
-#include <err.h>
+//#include <err.h>
 #include <errno.h>
 #include <sys/stat.h>
 #include <assert.h>
@@ -563,5 +563,19 @@ typedef struct {
   int day_start_seed[VECTOR_DISEASE_TYPES];
   int day_end_seed[VECTOR_DISEASE_TYPES];
 } vector_disease_data_t;
+
+
+// From https://unixpapa.com/incnote/string.html
+
+inline char * strsep(char **sp, char *sep)
+{
+	char *p, *s;
+	if (sp == NULL || *sp == NULL || **sp == '\0') return(NULL);
+	s = *sp;
+	p = s + strcspn(s, sep);
+	if (*p != '\0') *p++ = '\0';
+	*sp = p;
+	return(s);
+}
 
 #endif // _FRED_GLOBAL_H

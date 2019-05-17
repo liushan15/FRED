@@ -382,7 +382,8 @@ void Respiratory_Transmission::density_transmission_model(int day, int disease_i
     exposed++;
   }
 
-  int infectee_count[inf_hosts];
+  vector<int> infectee_count(inf_hosts);
+  infectee_count.resize(inf_hosts);
   for(int i = 0; i < inf_hosts; ++i) {
     infectee_count[i] = 0;
   }

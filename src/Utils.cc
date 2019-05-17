@@ -17,6 +17,7 @@
 #include "Utils.h"
 #include "Global.h"
 #include <chrono>
+#include <filesystem>
 #include <stdlib.h>
 #include <string.h>
 
@@ -202,14 +203,15 @@ void Utils::fred_open_output_files(){
 }
 
 void Utils::fred_make_directory(char* directory) {
-  mode_t mask;        // the user's current umask
-  mode_t mode = 0777; // as a start
-  mask = umask(0); // get the current mask, which reads and sets...
-  umask(mask);     // so now we have to put it back
-  mode ^= mask;    // apply the user's existing umask
-  if(0!=mkdir(directory, mode) && EEXIST != errno) { // make it
-    Utils::fred_abort("mkdir(%s) failed with %d\n", directory, errno); // or die
-  }
+  std::filesystem::create_directory(directory);
+  //mode_t mask;        // the user's current umask
+  //mode_t mode = 0777; // as a start
+  //mask = umask(0); // get the current mask, which reads and sets...
+  //umask(mask);     // so now we have to put it back
+  //mode ^= mask;    // apply the user's existing umask
+  //if(0!=mkdir(directory, mode) && EEXIST != errno) { // make it
+  //  Utils::fred_abort("mkdir(%s) failed with %d\n", directory, errno); // or die
+  //}
 }
 
 
@@ -406,7 +408,7 @@ void Utils::get_fred_file_name(char* filename) {
   }
 }
 
-#include <sys/resource.h>
+//#include <sys/resource.h>
 /*
   #define   RUSAGE_SELF     0
   #define   RUSAGE_CHILDREN     -1
@@ -432,11 +434,11 @@ void Utils::get_fred_file_name(char* filename) {
 */
 
 void Utils::fred_print_resource_usage(int day) {
-  rusage r_usage;
-  getrusage(RUSAGE_SELF, &r_usage);
-  printf("day %d maxrss %ld\n",
-	 day, r_usage.ru_maxrss);
-  fflush(stdout);
+  //rusage r_usage;
+  //getrusage(RUSAGE_SELF, &r_usage);
+  //printf("day %d maxrss %ld\n",
+	 //day, r_usage.ru_maxrss);
+  //fflush(stdout);
 }
 
 /********************************************************

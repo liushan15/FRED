@@ -500,7 +500,7 @@ void Neighborhood_Layer::print_distances() {
       for(int i_dest = 0; i_dest < rows; i_dest++) {
 	for(int j_dest = 0; j_dest < cols; j_dest++) {
 	  if (i_dest < i_src) continue;
-	  if (i_dest == i_src and j_dest < j_src) continue;
+	  if (i_dest == i_src && j_dest < j_src) continue;
 
 	  fprintf(fp,"row %3d col %3d pop %5d ", i_src,j_src,pop_src);
 	  fprintf(fp,"row %3d col %3d ", i_dest,j_dest);

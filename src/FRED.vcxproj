@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{41DFE10E-35EF-4D7E-9C94-DB841B2CFB24}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions);_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <TargetMachine>MachineX86</TargetMachine>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <TargetMachine>MachineX86</TargetMachine>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Abstract_Grid.cc" />
+    <ClCompile Include="Abstract_Patch.cc" />
+    <ClCompile Include="Activities.cc" />
+    <ClCompile Include="Age_Map.cc" />
+    <ClCompile Include="Antiviral.cc" />
+    <ClCompile Include="Antivirals.cc" />
+    <ClCompile Include="AV_Decisions.cc" />
+    <ClCompile Include="AV_Health.cc" />
+    <ClCompile Include="AV_Manager.cc" />
+    <ClCompile Include="AV_Policies.cc" />
+    <ClCompile Include="Behavior.cc" />
+    <ClCompile Include="Classroom.cc" />
+    <ClCompile Include="County.cc" />
+    <ClCompile Include="Date.cc" />
+    <ClCompile Include="Decision.cc" />
+    <ClCompile Include="Demographics.cc" />
+    <ClCompile Include="Disease.cc" />
+    <ClCompile Include="Disease_List.cc" />
+    <ClCompile Include="Epidemic.cc" />
+    <ClCompile Include="Events.cc" />
+    <ClCompile Include="Evolution.cc" />
+    <ClCompile Include="EvolutionFactory.cc" />
+    <ClCompile Include="Fred.cc" />
+    <ClCompile Include="Geo.cc" />
+    <ClCompile Include="Global.cc" />
+    <ClCompile Include="Health.cc" />
+    <ClCompile Include="HIV_Epidemic.cc" />
+    <ClCompile Include="HIV_Infection.cc" />
+    <ClCompile Include="HIV_Natural_History.cc" />
+    <ClCompile Include="Hospital.cc" />
+    <ClCompile Include="Household.cc" />
+    <ClCompile Include="Infection.cc" />
+    <ClCompile Include="Intention.cc" />
+    <ClCompile Include="Manager.cc" />
+    <ClCompile Include="Markov_Epidemic.cc" />
+    <ClCompile Include="Markov_Infection.cc" />
+    <ClCompile Include="Markov_Model.cc" />
+    <ClCompile Include="Markov_Natural_History.cc" />
+    <ClCompile Include="Mixing_Group.cc" />
+    <ClCompile Include="MSEvolution.cc" />
+    <ClCompile Include="Natural_History.cc" />
+    <ClCompile Include="Neighborhood.cc" />
+    <ClCompile Include="Neighborhood_Layer.cc" />
+    <ClCompile Include="Neighborhood_Patch.cc" />
+    <ClCompile Include="Network.cc" />
+    <ClCompile Include="Office.cc" />
+    <ClCompile Include="Params.cc" />
+    <ClCompile Include="Past_Infection.cc" />
+    <ClCompile Include="Perceptions.cc" />
+    <ClCompile Include="Person.cc" />
+    <ClCompile Include="Person_Network_Link.cc" />
+    <ClCompile Include="Person_Place_Link.cc" />
+    <ClCompile Include="Piecewise_Linear.cc" />
+    <ClCompile Include="Place.cc" />
+    <ClCompile Include="Place_List.cc" />
+    <ClCompile Include="Policy.cc" />
+    <ClCompile Include="Population.cc" />
+    <ClCompile Include="Random.cc" />
+    <ClCompile Include="Regional_Layer.cc" />
+    <ClCompile Include="Regional_Patch.cc" />
+    <ClCompile Include="Respiratory_Transmission.cc" />
+    <ClCompile Include="School.cc" />
+    <ClCompile Include="Seasonality.cc" />
+    <ClCompile Include="Seasonality_Timestep_Map.cc" />
+    <ClCompile Include="Sexual_Transmission.cc" />
+    <ClCompile Include="Sexual_Transmission_Network.cc" />
+    <ClCompile Include="Strain.cc" />
+    <ClCompile Include="StrainTable.cc" />
+    <ClCompile Include="Timestep_Map.cc" />
+    <ClCompile Include="Trajectory.cc" />
+    <ClCompile Include="Transmission.cc" />
+    <ClCompile Include="Travel.cc" />
+    <ClCompile Include="Utils.cc" />
+    <ClCompile Include="Vaccine.cc" />
+    <ClCompile Include="Vaccines.cc" />
+    <ClCompile Include="Vaccine_Dose.cc" />
+    <ClCompile Include="Vaccine_Health.cc" />
+    <ClCompile Include="Vaccine_Manager.cc" />
+    <ClCompile Include="Vaccine_Priority_Decisions.cc" />
+    <ClCompile Include="Vaccine_Priority_Policies.cc" />
+    <ClCompile Include="Vector_Layer.cc" />
+    <ClCompile Include="Vector_Patch.cc" />
+    <ClCompile Include="Vector_Transmission.cc" />
+    <ClCompile Include="Visualization_Layer.cc" />
+    <ClCompile Include="Visualization_Patch.cc" />
+    <ClCompile Include="Workplace.cc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Abstract_Grid.h" />
+    <ClInclude Include="Abstract_Patch.h" />
+    <ClInclude Include="Activities.h" />
+    <ClInclude Include="Age_Map.h" />
+    <ClInclude Include="Antiviral.h" />
+    <ClInclude Include="Antivirals.h" />
+    <ClInclude Include="AV_Decisions.h" />
+    <ClInclude Include="AV_Health.h" />
+    <ClInclude Include="AV_Manager.h" />
+    <ClInclude Include="AV_Policies.h" />
+    <ClInclude Include="Behavior.h" />
+    <ClInclude Include="Bloque.h" />
+    <ClInclude Include="Classroom.h" />
+    <ClInclude Include="Compression.h" />
+    <ClInclude Include="County.h" />
+    <ClInclude Include="Date.h" />
+    <ClInclude Include="Decision.h" />
+    <ClInclude Include="Demographics.h" />
+    <ClInclude Include="Disease.h" />
+    <ClInclude Include="Disease_List.h" />
+    <ClInclude Include="Epidemic.h" />
+    <ClInclude Include="Events.h" />
+    <ClInclude Include="Evolution.h" />
+    <ClInclude Include="EvolutionFactory.h" />
+    <ClInclude Include="FixedIntraHost.h" />
+    <ClInclude Include="Fred.h" />
+    <ClInclude Include="Geo.h" />
+    <ClInclude Include="Global.h" />
+    <ClInclude Include="Health.h" />
+    <ClInclude Include="HIV_Epidemic.h" />
+    <ClInclude Include="HIV_Infection.h" />
+    <ClInclude Include="HIV_Natural_History.h" />
+    <ClInclude Include="Hospital.h" />
+    <ClInclude Include="Household.h" />
+    <ClInclude Include="Infection.h" />
+    <ClInclude Include="Intention.h" />
+    <ClInclude Include="Manager.h" />
+    <ClInclude Include="Markov_Epidemic.h" />
+    <ClInclude Include="Markov_Infection.h" />
+    <ClInclude Include="Markov_Model.h" />
+    <ClInclude Include="Markov_Natural_History.h" />
+    <ClInclude Include="Mixing_Group.h" />
+    <ClInclude Include="MSEvolution.h" />
+    <ClInclude Include="Natural_History.h" />
+    <ClInclude Include="Neighborhood.h" />
+    <ClInclude Include="Neighborhood_Layer.h" />
+    <ClInclude Include="Neighborhood_Patch.h" />
+    <ClInclude Include="Network.h" />
+    <ClInclude Include="ODE.h" />
+    <ClInclude Include="ODEIntraHost.h" />
+    <ClInclude Include="Office.h" />
+    <ClInclude Include="Params.h" />
+    <ClInclude Include="Past_Infection.h" />
+    <ClInclude Include="Perceptions.h" />
+    <ClInclude Include="Person.h" />
+    <ClInclude Include="Person_Network_Link.h" />
+    <ClInclude Include="Person_Place_Link.h" />
+    <ClInclude Include="Piecewise_Linear.h" />
+    <ClInclude Include="Place.h" />
+    <ClInclude Include="Place_List.h" />
+    <ClInclude Include="Policy.h" />
+    <ClInclude Include="Population.h" />
+    <ClInclude Include="Random.h" />
+    <ClInclude Include="Regional_Layer.h" />
+    <ClInclude Include="Regional_Patch.h" />
+    <ClInclude Include="Respiratory_Transmission.h" />
+    <ClInclude Include="RSAIntraHost.h" />
+    <ClInclude Include="School.h" />
+    <ClInclude Include="Seasonality.h" />
+    <ClInclude Include="Seasonality_Timestep_Map.h" />
+    <ClInclude Include="Sexual_Transmission.h" />
+    <ClInclude Include="Sexual_Transmission_Network.h" />
+    <ClInclude Include="State.h" />
+    <ClInclude Include="Strain.h" />
+    <ClInclude Include="StrainTable.h" />
+    <ClInclude Include="Timestep_Map.h" />
+    <ClInclude Include="Tracker.h" />
+    <ClInclude Include="Trajectory.h" />
+    <ClInclude Include="Transmission.h" />
+    <ClInclude Include="Travel.h" />
+    <ClInclude Include="Utils.h" />
+    <ClInclude Include="Vaccine.h" />
+    <ClInclude Include="Vaccines.h" />
+    <ClInclude Include="Vaccine_Dose.h" />
+    <ClInclude Include="Vaccine_Health.h" />
+    <ClInclude Include="Vaccine_Manager.h" />
+    <ClInclude Include="Vaccine_Priority_Decisions.h" />
+    <ClInclude Include="Vaccine_Priority_Policies.h" />
+    <ClInclude Include="Vector_Layer.h" />
+    <ClInclude Include="Vector_Patch.h" />
+    <ClInclude Include="Vector_Transmission.h" />
+    <ClInclude Include="Visualization_Layer.h" />
+    <ClInclude Include="Visualization_Patch.h" />
+    <ClInclude Include="Workplace.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

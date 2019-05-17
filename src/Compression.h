@@ -16,9 +16,9 @@
 // This file added to FRED by J. DePasse (jvd10@pitt.edu) in July 2012
 //
 //
+#if 0
 #ifndef _FRED_COMPRESSION_H
 #define _FRED_COMPRESSION_H
-
 #include <cstring>
 #include <string>
 #include <iostream>
@@ -28,13 +28,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#include <sys/mman.h>
-#include <sys/types.h>
-#include <unistd.h>
-#include <sys/types.h>
-#include <sys/stat.h>
-#include <fcntl.h>
-#include <errno.h>
+//#include <sys/mman.h>
+//#include <sys/types.h>
+//#include <unistd.h>
+//#include <sys/types.h>
+//#include <sys/stat.h>
+//#include <fcntl.h>
+//#include <errno.h>
 
 #include <inttypes.h>
 #include <vector>
@@ -112,4 +112,5 @@ public:
 
 
 
+#endif
 #endif

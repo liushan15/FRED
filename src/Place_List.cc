@@ -21,7 +21,8 @@
 #include <set>
 #include <string>
 #include <typeinfo>
-#include <unistd.h>
+#include <io.h>
+//#include <unistd.h>
 #include "Classroom.h"
 #include "Disease.h"
 #include "Geo.h"
@@ -51,6 +52,15 @@
 // Place_List::quality_control implementation is very large,
 // include from separate .cc file:
 #include "Place_List_Quality_Control.cc"
+//#include <Windows.h>
+
+namespace
+{
+	int getpid()
+	{
+		return 1337; // GetCurrentProcessId();
+	}
+}
 
 using namespace std;
 
@@ -2804,8 +2814,10 @@ void Place_List::setup_HAZEL_mobile_vans() {
       temp_hosp_vec.at(i)->have_HAZEL_closure_dates_been_set(true);
     }
   } else {
+	std::random_device rd;
+	std::mt19937 g(rd());
     //shuffle the vector
-    std::random_shuffle(temp_hosp_vec.begin(), temp_hosp_vec.end());
+    std::shuffle(temp_hosp_vec.begin(), temp_hosp_vec.end(), g);
     for(int i = 0; i < Place_List::HAZEL_mobile_van_max; ++i) {
       //The Mobile Healthcare Clinics close after days
       temp_hosp_vec.at(i)->set_close_date(Place_List::HAZEL_disaster_end_sim_day + Hospital::get_HAZEL_mobile_van_open_delay()

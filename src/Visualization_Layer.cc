@@ -137,7 +137,7 @@ void Visualization_Layer::quality_control() {
         this->grid[row][col].quality_control();
       }
     }
-    if(Global::Verbose > 1 and this->rows > 0) {
+    if(Global::Verbose > 1 && this->rows > 0) {
       char filename[FRED_STRING_SIZE];
       sprintf(filename, "%s/visualization_grid.dat", Global::Simulation_directory);
       FILE* fp = fopen(filename, "w");

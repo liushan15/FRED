@@ -23,7 +23,7 @@ void Evolution :: setup(Disease *disease) {
   this->disease = disease;
 }
 
-inline double Evolution::residual_immunity(Person *person, int challenge_strain, int day) {
+double Evolution::residual_immunity(Person *person, int challenge_strain, int day) {
   return double( !( person->get_health()->is_susceptible( disease->get_id() ) ) );
 }
 

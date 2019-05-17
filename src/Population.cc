@@ -14,8 +14,7 @@
 // File: Population.cc
 //
 
-#include <unistd.h>
-
+#include <io.h> 
 #include "Activities.h"
 #include "Age_Map.h"
 #include "AV_Manager.h"
@@ -40,6 +39,16 @@
 #include "Travel.h"
 #include "Utils.h"
 #include "Vaccine_Manager.h"
+
+//#define NOMINMAX
+//#include <Windows.h>
+namespace
+{
+	int getpid()
+	{
+		return 1337;// GetCurrentProcessId();
+	}
+}
 
 #if SNAPPY
 #include "Compression.h"
