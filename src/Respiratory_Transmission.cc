@@ -220,7 +220,7 @@ void Respiratory_Transmission::default_transmission_model(int day, int disease_i
   // randomize the order of processing the infectious list
   std::vector<int> shuffle_index;
   int number_of_infectious = infectious->size();
-  shuffle_index.reserve(number_of_infectious);
+  shuffle_index.resize(number_of_infectious);
   for(int i = 0; i < number_of_infectious; ++i) {
     shuffle_index[i] = i;
   }
